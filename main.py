@@ -1,6 +1,6 @@
+import json
 from datetime import datetime
 from web3 import Web3
-import json
 
 #define the API keys from Infura
 API_KEY = "28ba7d8b2a2f44478f56189736480ce5"
@@ -87,23 +87,32 @@ import schedule
 import time
 print("Exporting to fx_bridge_total_supply.csv...")
 
+#definition of exportCSV
 def exportCSV():
     with open("fx_bridge_total_supply.csv", "w", newline="") as f:
 
         write = csv.writer(f)
-        write.writerow(["PundiX", "USDT", "WETH", "UST", "DAI", "COLLAR", "Time Stamp"])
+        write.writerow(["PundiX", "USDT", "WETH", "UST", "DAI", "COLLAR", "Block Height" , "Time Stamp"])
         write.writerow(
             [pundiXCorrectedBal, USDTCorrectedBal, WETHCorrectedBal, USTCorrectedBal, DAICorrectedBal,
-             COLLARCorrectedBal,
+             COLLARCorrectedBal,blockNum,
              timeStamp])
 
-schedule.every(5).seconds.do(exportCSV)
-start = time.time()
-while True:
-    schedule.run_pending()
-    if start<60:
-        exportCSV()
-        schedule.every(5).seconds.do(exportCSV)
-        break
+#Exporting block snapshot every 5 seconds for 1 minute
+with open("fx_bridge_total_supply.csv", "w", newline="") as f:
+    write = csv.writer(f)
+    write.writerow(["PundiX", "USDT", "WETH", "UST", "DAI", "COLLAR", "Block Height", "Time Stamp"])
+    for i in range(12):
+        time.sleep(5)
+        t = time.localtime()
+        current_time = time.strftime("%H:%M:%S", t)
+
+
+        write.writerow(
+                [pundiXCorrectedBal, USDTCorrectedBal, WETHCorrectedBal, USTCorrectedBal, DAICorrectedBal,
+                 COLLARCorrectedBal, blockNum,
+                 current_time])
+
+
 
 print("fx_bridge_total_supply.csv exported successfully... ")
