@@ -1,8 +1,6 @@
-from web3 import Web3
-
 from datetime import datetime
+from web3 import Web3
 import json
-
 
 #define the API keys from Infura
 API_KEY = "28ba7d8b2a2f44478f56189736480ce5"
@@ -85,13 +83,27 @@ print(COLLARCorrectedBal, COLLAR_contract.functions.symbol().call())
 
 #printing to CSV file
 import csv
-print("Printing fx_bridge_total_supply.csv...")
-with open("fx_bridge_total_supply.csv", "w", newline = "") as f:
-    write = csv.writer(f)
-    write.writerow(["PundiX", "USDT", "WETH", "UST", "DAI", "COLLAR", "Time Stamp"])
+import schedule
+import time
+print("Exporting to fx_bridge_total_supply.csv...")
 
+def exportCSV():
+    with open("fx_bridge_total_supply.csv", "w", newline="") as f:
 
-    for i in range(x,time):
-         write.writerow([pundiXCorrectedBal,USDTCorrectedBal,WETHCorrectedBal,USTCorrectedBal,DAICorrectedBal,COLLARCorrectedBal, timeStamp])
+        write = csv.writer(f)
+        write.writerow(["PundiX", "USDT", "WETH", "UST", "DAI", "COLLAR", "Time Stamp"])
+        write.writerow(
+            [pundiXCorrectedBal, USDTCorrectedBal, WETHCorrectedBal, USTCorrectedBal, DAICorrectedBal,
+             COLLARCorrectedBal,
+             timeStamp])
 
+schedule.every(5).seconds.do(exportCSV)
+start = time.time()
+while True:
+    schedule.run_pending()
+    if start<60:
+        exportCSV()
+        schedule.every(5).seconds.do(exportCSV)
+        break
 
+print("fx_bridge_total_supply.csv exported successfully... ")
