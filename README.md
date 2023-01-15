@@ -7,6 +7,14 @@ Instructions:
  4. Then it will a the contract using the ABI from Etherscan.
  5. It will then print the balances/supply for each tokens locked in the bridge.
  6. A fx_bridge_total_supply.csv will be created to store data every 5 seconds for the next minute, acting like a snapshot.
+ 7. As the console states "fx_bridge_total_supply.csv exported successfully... ", the csv would be ready for read in the file directory of the project created.
+ 
+ Sample snaphot of the console:
+ ![image](https://user-images.githubusercontent.com/98268475/212541258-60184bd7-91b3-4828-9876-74271ababfd9.png)
+
+ Sample snapshot of the fx_bridge_total_supply.csv:
+ 
+ ![image](https://user-images.githubusercontent.com/98268475/212541322-01aaae21-c5f9-4a22-a33a-4a1e5673c5e3.png)
 
 # ERC721 "Yourname" Token on Goerli Testnet
 Contract address: 0xf960E25876edE27E1516165D183b5A7004D51aFE on Goerli Testnet.
