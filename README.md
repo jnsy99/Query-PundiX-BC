@@ -3,7 +3,7 @@
 Instructions:
  1. Open the main.py to run the script.
  2. As the script runs, it will connect with an Ethereum node using Infura and create a web3 connection.
- 3. After, it will print the current blockcnumber and snapshot of the date and time. 
+ 3. After, it will print the current blocknumber and snapshot of the date and time. 
  4. Then it will a the contract using the ABI from Etherscan.
  5. It will then print the balances/supply for each tokens locked in the bridge.
  6. A fx_bridge_total_supply.csv will be created to store data every 5 seconds for the next minute, acting like a snapshot.
