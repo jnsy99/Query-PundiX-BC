@@ -7,7 +7,7 @@ Instructions:
  4. Then it will a the contract using the ABI from Etherscan.
  5. It will then print the balances/supply for each tokens locked in the bridge.
  6. A fx_bridge_total_supply.csv will be created to store data every 5 seconds for the next minute, acting like a snapshot.
- 7. As the console states "fx_bridge_total_supply.csv exported successfully... ", the csv would be ready for read in the file directory of the project created.
+ 7. As the console states "fx_bridge_total_supply.csv exported successfully... ", the csv would be ready for read in the file directory of where the project was created.
  
  
  Sample snaphot of the console:
