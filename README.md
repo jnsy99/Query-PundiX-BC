@@ -17,6 +17,7 @@ This token includes the fuctions of:
 1. Mint function with Auto Increment ID
 2. Burn Function
 3. Pause function
+
 ![image](https://user-images.githubusercontent.com/98268475/212540488-506efbd6-346d-46a3-9463-5a5a886e482e.png)
 
 
