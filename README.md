@@ -9,9 +9,9 @@ Instructions:
  6. A fx_bridge_total_supply.csv will be created to store data every 5 seconds for the next minute, acting like a snapshot.
 
 # ERC721 "Yourname" Token on Goerli Testnet
-Contract address: 0x3498d1BA098EAd22C3FB303aa060CAB92abe54E4 on Goerli Testnet.
+Contract address: 0xf960E25876edE27E1516165D183b5A7004D51aFE on Goerli Testnet.
 Since Ethereum is migrating from Prove of Work to Prove of Stake, the Ropsten and Rinkeby Testnet is down, thus, please add this contract address on the Metamask wallet using the Goerli Testnet. Althernatively, it can be seen on 
-Etherscan.io here: https://goerli.etherscan.io/token/0x3498d1BA098EAd22C3FB303aa060CAB92abe54E4?a=0x2cd5658cfea42f46333f2cb4759c83aebc50e184
+Etherscan.io here: https://goerli.etherscan.io/token/0xf960e25876ede27e1516165d183b5a7004d51afe
 
 
 # ERC20 "Yourname" Token on Goerli Testnet
