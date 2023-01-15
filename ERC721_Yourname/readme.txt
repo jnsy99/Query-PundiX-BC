@@ -4,4 +4,4 @@ I have since created the ERC721 token "YOURNAME" on the Goerli Test Network whic
 	2. Burn Function
 
 Please use the Goerli Test Network in the Metamask Wallet instead and add the 
-contract address: 0x3498d1BA098EAd22C3FB303aa060CAB92abe54E4
+contract address: 0xf960E25876edE27E1516165D183b5A7004D51aFE
