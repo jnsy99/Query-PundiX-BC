@@ -21,7 +21,7 @@ Instructions:
 # ERC721 "Yourname" Token on Goerli Testnet
 Contract address: 0xf960E25876edE27E1516165D183b5A7004D51aFE on Goerli Testnet.
 
-Since Ethereum is migrating from Prove of Work to Prove of Stake, the Ropsten and Rinkeby Testnet is down, thus, please add this contract address on the Metamask wallet using the Goerli Testnet. Althernatively, it can be seen on 
+Since Ethereum is migrating from Proof of Work to Proof of Stake, the Ropsten and Rinkeby Testnet is down, thus, please add this contract address on the Metamask wallet using the Goerli Testnet. Alternatively, it can be seen on 
 Etherscan.io here: https://goerli.etherscan.io/token/0xf960e25876ede27e1516165d183b5a7004d51afe
 
 This token includes the fuctions of:
@@ -36,7 +36,7 @@ This token includes the fuctions of:
 # ERC20 "Yourname" Token on Goerli Testnet
 Contract address: 0xEd74ee9071C1e23b5308f442c5e45A546015A2FC on Goerli Testnet.
 
-Since Ethereum is migrating from Prove of Work to Prove of Stake, the Ropsten and Rinkeby Testnet is down, thus, please add this contract address on the Metamask wallet using the Goerli Testnet. Althernatively, it can be seen on 
+Since Ethereum is migrating from Proof of Work to Proof of Stake, the Ropsten and Rinkeby Testnet is down, thus, please add this contract address on the Metamask wallet using the Goerli Testnet. Alternatively, it can be seen on
 Etherscan.io here: https://goerli.etherscan.io/token/0xEd74ee9071C1e23b5308f442c5e45A546015A2FC
 
 ![image](https://user-images.githubusercontent.com/98268475/212540535-67c12814-1088-4f6f-b729-4099b549f3a3.png)
