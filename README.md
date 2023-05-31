@@ -1,4 +1,4 @@
-# Blockchain Developer Intern Interview Question
+
 # Part 1 main.py
 Instructions:
  1. Open the main.py to run the script.
